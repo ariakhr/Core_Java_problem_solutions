@@ -8,9 +8,7 @@ public class Java8StreamUtilsExamples {
 
     public static void main(String[] args) {
 
-        List<Product> productList = Arrays.asList(new Product(23, "potatoes", 100),
-                new Product(14, "orange", 150), new Product(13, "lemon", 200),
-                new Product(23, "bread", 75), new Product(13, "sugar", 745));
+        List<Product> productList = Utils.getProducts();
 
         //Stream used to convert list of Product objects to List<String> of product name
         List<String> prods = productList.stream().map(Product::getName).collect(Collectors.toList());
@@ -37,6 +35,8 @@ public class Java8StreamUtilsExamples {
         Map<Boolean, List<Product>> mapPartioned = productList.stream()
                 .collect(Collectors.partitioningBy(element -> element.getProductId() > 15));
         System.out.println("Partition by product Id > 15 " + mapPartioned);
+
+
 
 
     }
