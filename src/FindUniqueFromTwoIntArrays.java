@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 
 //Problem stmt: Given two arrays M and N of integers. Compare both the arrays of ints and return only unique integers of
 // the two arrays. Duplicates should be removed as well.
-public class Main {
+public class FindUniqueFromTwoIntArrays {
 
     public static void main(String[] args) {
 
