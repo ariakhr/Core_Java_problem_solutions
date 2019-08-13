@@ -53,6 +53,7 @@ public class CyclicRotation {
         int count = 0;
         int len = A.length-1;
         int rotatedNums[] = new int[A.length];
+        //If K == 0, negative test case is very important
         if(K == 0) {
             return A;
         }
