@@ -1,3 +1,6 @@
+import codility.domain.Product;
+import codility.domain.ProductNew;
+
 import java.util.Arrays;
 import java.util.List;
 

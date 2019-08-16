@@ -1,3 +1,5 @@
+package codility.domain;
+
 import java.util.Objects;
 
 public class ProductNew {

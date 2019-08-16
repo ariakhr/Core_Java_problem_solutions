@@ -1,3 +1,5 @@
+package codility.domain;
+
 public class Product {
 
     private int productId;

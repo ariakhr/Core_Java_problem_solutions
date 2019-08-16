@@ -1,3 +1,6 @@
+import codility.domain.Employee;
+import codility.domain.Product;
+
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
@@ -36,8 +39,11 @@ public class Java8StreamUtilsExamples {
                 .collect(Collectors.partitioningBy(element -> element.getProductId() > 15));
         System.out.println("Partition by product Id > 15 " + mapPartioned);
 
-
-
+        //Stream – A list of Employee List with id, name and salary – write code to return only the name of employees above 50K
+        Employee employee = new Employee();
+        List<String> employeeName = employee.getEmployees().stream()
+                .filter( e -> e.getSalary() > 50000).map(Employee::getName).collect(Collectors.toList());
+        System.out.println("Employees with Salary > 50000 " + employeeName);
 
     }
 }

@@ -3,7 +3,9 @@
 
 import java.util.*;
 import java.util.stream.Collectors;
-
+/*Task: To find and an array of range from the given array of integers.
+For e.g) if the i/p is {0,1,2,4,5,2,7,4,7,2,8,9,10,12} the o/p will be printed as [0->2, 4->5, 7->10, 12]
+*/
 public class FindArrayRangeSolution {
 
     public static void main(String args[]){

@@ -36,6 +36,7 @@ public class FrogJumpSolution {
 
     //Correct and excellent performance (Time Complexity = O(1))
     public static int solution(int X, int Y, int D) {
+        //If X and Y are equals or X is greater than Y, return Zero
         if( (Y-X) == 0 || X >= Y) {
             return 0;
         } else {
