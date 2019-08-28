@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Arrays;
 
 public class CloningShallowAndDeep {
+
     public static void main(String[] args) {
         //Shallow Copy
         System.out.println("Shallow Copy");
@@ -29,7 +30,6 @@ public class CloningShallowAndDeep {
         ShallowCopyEx ex3 = (ShallowCopyEx) SerializationUtils.clone(ex2);
         originalValArray1[0] = 13;
         ex3.showData(); // prints out [8, 5, 12]
-
     }
 }
 

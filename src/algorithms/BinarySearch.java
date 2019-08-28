@@ -1,4 +1,4 @@
-package Algorithms;
+package algorithms;
 
 import java.util.Arrays;
 
@@ -12,7 +12,7 @@ public class BinarySearch {
         System.out.println("Using loop - Binary Search for the key " + key + " is found at index : " + binarySearchUsingLoop(N, 0, N.length, key));
     }
 
-    public static int binarySearchUsingRecurssion(Integer N[], int first, int last,int key) {
+    private static int binarySearchUsingRecurssion(Integer N[], int first, int last,int key) {
         Arrays.sort(N);
         int mid = (first+last)/2;
 
@@ -21,16 +21,18 @@ public class BinarySearch {
                 return mid;
             }
             if(N[mid] < key) {
-                return binarySearchUsingRecurssion(N, mid+1, last, key);
+                first = mid+1;
+                return binarySearchUsingRecurssion(N, first, last, key);
             }
             if(N[mid] > key) {
-                return binarySearchUsingRecurssion(N, first, mid-1, key);
+                last = mid-1;
+                return binarySearchUsingRecurssion(N, first, last, key);
             }
         }
         return 0;
     }
 
-    public static int binarySearchUsingLoop(Integer N[], int first, int last,int key) {
+    private static int binarySearchUsingLoop(Integer N[], int first, int last,int key) {
         Arrays.sort(N);
         int mid = (first+last)/2;
 
