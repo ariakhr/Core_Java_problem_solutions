@@ -1,3 +1,5 @@
+package codility.arrayexamples;
+
 import java.util.Arrays;
 
 /*An array A consisting of N integers is given. We are looking for
