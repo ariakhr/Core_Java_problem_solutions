@@ -21,7 +21,7 @@ package codility;
         1 -> needs to increment 3
 
         So total move required for A and B to be equal is 4 + 6 = 10 moves
- */
+*/
 public class ArrayElementsEqualityCheck {
     public static void main(String[] args) {
 /*        int[] a = new int[]{123, 543};
