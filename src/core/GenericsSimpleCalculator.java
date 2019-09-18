@@ -1,3 +1,5 @@
+package core;
+
 public class GenericsSimpleCalculator {
 
     public static void main(String args[]) {

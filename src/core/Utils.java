@@ -1,3 +1,5 @@
+package core;
+
 import codility.domain.Product;
 import codility.domain.ProductNew;
 

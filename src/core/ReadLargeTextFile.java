@@ -1,3 +1,5 @@
+package core;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,7 +10,7 @@ import java.util.Scanner;
 
 public class ReadLargeTextFile {
 
-    public static void main(String args[]) throws FileNotFoundException{
+    public static void main(String args[]) {
         System.out.println("File processed : " + parseFileUsingScanner());
         listAllFilesInBaseFolder();
         System.out.println("File processed : " + parseFileUsingBufferedReader());

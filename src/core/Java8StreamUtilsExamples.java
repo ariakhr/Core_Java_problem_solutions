@@ -1,7 +1,8 @@
+package core;
+
 import codility.domain.Employee;
 import codility.domain.Product;
 
-import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;

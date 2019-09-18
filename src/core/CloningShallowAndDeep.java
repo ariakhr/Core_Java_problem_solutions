@@ -1,3 +1,5 @@
+package core;
+
 import org.apache.commons.lang3.SerializationUtils;
 
 import java.io.Serializable;
@@ -27,7 +29,7 @@ public class CloningShallowAndDeep {
         int[] originalValArray1 = {8, 5, 12};
         ShallowCopyEx ex2 = new ShallowCopyEx(originalValArray1);
         ex2.showData(); // prints out [8, 5, 12]
-        ShallowCopyEx ex3 = (ShallowCopyEx) SerializationUtils.clone(ex2);
+        ShallowCopyEx ex3 = SerializationUtils.clone(ex2);
         originalValArray1[0] = 13;
         ex3.showData(); // prints out [8, 5, 12]
     }

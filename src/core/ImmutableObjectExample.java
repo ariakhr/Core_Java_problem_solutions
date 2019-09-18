@@ -1,4 +1,4 @@
-
+package core;
 /*To create an immutable class in java, you have to do following steps.
 
         Declare the class as final so it can’t be extended.

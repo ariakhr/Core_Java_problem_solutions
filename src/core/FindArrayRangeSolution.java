@@ -1,4 +1,4 @@
-// Given an integer array, return the summary of its ranges.
+package core;// Given an integer array, return the summary of its ranges.
 // For example, given [0,1,2,4,5,2,7], return ["0->2","4->5","7"].
 
 import java.util.*;
