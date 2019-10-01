@@ -11,8 +11,8 @@ and continue till loops ends
 public class LongestCommonSequenceFromTwoStrings {
 
     public static void main(String args[]) {
-        String one = "test12345";
-        String two = "tadt12347";
+        String one = "abcba";
+        String two = "abcba";
         System.out.println("longest common seq from string '" + one + "' & '" + two + "' is : " + solution(one, two));
     }
 
@@ -21,7 +21,7 @@ public class LongestCommonSequenceFromTwoStrings {
         String longestSubStr = "";
 
         for(int i=0;i < str1.length() ; i++) {
-            for(int j= i+1; j < str1.length(); j++) {
+            for(int j= i+1; j <= str1.length(); j++) {
                 String subStr = str1.substring(i,j);
                 if(str2.contains(subStr) && subStr.length() > longest) {
                     longest = subStr.length();
